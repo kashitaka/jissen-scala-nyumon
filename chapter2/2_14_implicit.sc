@@ -41,6 +41,7 @@ implicit object StrAdder extends Adder[String] {
 }
 
 // これでsumの実装を一般化できる。
-// 別のtypeの演算を増やしたい時は Adder[T]を継承した implicit object を増やす
 sum(List(1, 2, 3))
 sum(List("A","B","C"))
+
+// 別のtypeの演算を増やしたい時は Adder[T]を継承した implicit object を増やす
