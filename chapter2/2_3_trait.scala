@@ -1,10 +1,11 @@
-import scala.collection.mutable.Buffer
+
 
 // ----- トレイト（特性） -----
 // 例：Nameable 名前がつけられるという特性
 // javaのInterfaceと違って関数に実装をもつ
 trait Nameable {
   val name: String
+
   def display(): Unit = println(name)
 }
 
